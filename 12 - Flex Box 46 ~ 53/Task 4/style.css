@@ -1,0 +1,27 @@
+.parent {
+  display: flex;
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  background-color: #eee;
+  padding: 12px;
+  font: 18px Arial;
+  color: white;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  align-items: flex-end;
+}
+
+.parent div {
+  display: flex;
+  height: calc((100% - 60px) / 3);
+  background-color: rgb(54, 155, 155);
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+}
+
+.parent .two {
+  width: 50%;
+  align-self: flex-start;
+}
