@@ -1,0 +1,17 @@
+div {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #eee;
+  color: rgba(255, 63, 4, 0.904);
+  font: bold 15px Arial;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 6px 0 0 0 rgba(255, 63, 4, 0.904), -6px 0 0 0 rgb(0, 195, 255);
+}
