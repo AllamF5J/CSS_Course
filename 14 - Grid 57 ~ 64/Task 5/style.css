@@ -1,0 +1,19 @@
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  display: grid;
+  grid: repeat(2, auto) / repeat(2, auto);
+  gap: 20px;
+  align-content: space-between;
+}
+
+div div {
+  display: grid;
+  background-color: rgb(221, 15, 94);
+  justify-content: center;
+  color: white;
+  font: bold 20px Arial;
+}
