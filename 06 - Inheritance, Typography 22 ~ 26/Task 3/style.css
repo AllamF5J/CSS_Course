@@ -1,0 +1,19 @@
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px auto;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: center;
+}
+
+.one {
+  font-size: 2.5rem;
+}
+
+.two {
+  font-size: 2rem;
+}
+
+.three {
+  font-size: 1.5rem;
+}
