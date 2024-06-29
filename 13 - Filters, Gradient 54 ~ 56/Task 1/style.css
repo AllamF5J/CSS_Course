@@ -1,0 +1,45 @@
+div {
+  display: flex;
+  position: relative;
+  width: 600px;
+  background-color: #EEE;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent #673ab7 transparent #f44336;
+}
+
+div::before,
+div::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  width: calc(100% + 16px);
+  height: 8px;
+  background: linear-gradient(to right,
+      #f44336 0% 20%,
+      #2196f3 20% 40%,
+      #4caf50 40% 60%,
+      #e91e63 60% 80%,
+      #673ab7 80% 100%);
+}
+
+div::after {
+  top: -8px;
+  left: -8px;
+}
+
+div::before {
+  bottom: -8px;
+  left: -8px;
+}
+
+div span::first-letter {
+  color: #f44336;
+}
