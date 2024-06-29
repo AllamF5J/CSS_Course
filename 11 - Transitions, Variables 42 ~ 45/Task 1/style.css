@@ -1,0 +1,27 @@
+.parent {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f8f8;
+  margin: 60px auto;
+  width: 450px;
+  height: 190px;
+  line-height: 60px;
+  text-align: center;
+  transition: all 0.5s 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+.parent:hover {
+  margin: 30px auto;
+}
+
+.child {
+  background-color: #eee;
+  width: 400px;
+  margin: -10px auto;
+  transition: all 0.5s 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.parent:hover .child {
+  margin: 10px auto;
+}
