@@ -1,0 +1,15 @@
+div {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 50px;
+  margin: 10% 10%;
+  padding: 60px;
+  border: 9px solid #ee9254;
+}
+
+div p {
+  padding: inherit;
+  border: inherit;
+  margin: 20px;
+  background-color: #e7e5e5;
+}
