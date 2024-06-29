@@ -1,0 +1,21 @@
+div {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 400px;
+  font-size: 20px;
+  background-color: #d4d4d4;
+  padding: 12px;
+  margin: 20px;
+  outline: 10px solid #d4d4d4;
+}
+
+.element-element-1 {
+  border-left: 6px solid #e91e63;
+}
+
+.element-element-2 {
+  visibility: hidden;
+}
+
+.element-element-3 {
+  border-left: 6px solid #42969c;
+}
