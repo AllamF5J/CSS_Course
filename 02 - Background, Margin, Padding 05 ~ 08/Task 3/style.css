@@ -1,0 +1,23 @@
+div {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  background-image: url(../css-assignment-5-8.png);
+  background-color: #ccc;
+  color: white;
+  margin: 20px;
+}
+
+.assign-3-shape-1 {
+  background-repeat: no-repeat;
+}
+
+.assign-3-shape-2 {
+  background-repeat: repeat-y;
+  background-position: right;
+}
+
+.assign-3-shape-3 {
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
