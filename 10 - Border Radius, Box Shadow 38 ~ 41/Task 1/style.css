@@ -1,0 +1,49 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #e7e7e7;
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+  display: inline-block;
+  position: relative;
+  margin: 60px 25px;
+  counter-increment: number-conter;
+  outline: 2px solid black;
+  font: 18px sans-serif;
+  box-shadow: 7px 7px 0px 2px rgb(38, 131, 218), -7px -7px 0px 2px rgb(236, 13, 99);
+}
+
+
+div::before {
+  position: absolute;
+  content: counter(number-conter);
+  text-align: center;
+  width: 26px;
+  height: 26px;
+  font-size: 22px;
+  margin: auto;
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+  top: -13.5px;
+  left: 35%;
+  color: white;
+  background-color: black;
+}
+
+div::after {
+  position: absolute;
+  content: "Element";
+  text-align: center;
+  top: 38px;
+  left: 18px;
+}
