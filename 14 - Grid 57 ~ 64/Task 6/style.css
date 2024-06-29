@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  display: grid;
+  background-color: #EEE;
+  padding: 20px;
+  margin: auto;
+  gap: 8px;
+  grid: repeat(20, 1fr) / repeat(8, 1fr);
+  grid:
+    "one one two three"
+    "four five five three"
+    "four six six three"
+    "seven eight nine ten";
+}
+
+div div {
+  display: grid;
+  background-color: white;
+}
+
+.one, .two,
+.three, .four,
+.five, .six,
+.seven, .eight,
+.nine, .ten {
+  display: grid;
+  align-content: flex-start;
+}
+
+
+.three,
+.five,
+.eight {
+  color: white;
+  background-color: black;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.ten {
+  grid-area: ten;
+}
+
+.page div {
+  padding: 15px;
+  position: relative;
+  border-bottom: 4px solid #ff6600;
+}
+
+.page div::after {
+  content: '"';
+  position: absolute;
+  bottom: -20px;
+  right: 15px;
+  color: #acabab;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.page div p::selection {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+.name {
+  font: Bold 16px Arial;
+  padding: 5px;
+}
+
+.job {
+  font: Bold 12px Arial;
+  color: #acabab;
+  padding: 0 5px;
+}
+
+.des {
+  font: bold 14px Arial;
+  padding: 15px 5px;
+  line-height: 1.6;
+}
+
+.det {
+  font: 14px Arial;
+  padding: 0px 5px;
+  line-height: 1.2;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6600;
+}
