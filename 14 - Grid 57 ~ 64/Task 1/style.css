@@ -1,0 +1,24 @@
+.grid {
+  display: grid;
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  grid: 45px auto / repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(79, 121, 138, 0.815);
+  counter-increment: element-counter;
+}
+
+.grid div::before {
+  content: "Element "counter(element-counter);
+  color: white;
+  font: bold 20px Arial;
+}
