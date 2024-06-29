@@ -1,0 +1,56 @@
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  width: 700px;
+  text-align: center;
+  margin: 20px auto;
+  border-bottom: #2e9797 2px solid;
+}
+
+caption {
+  font: 600 17px Arial;
+  margin-bottom: 20px;
+}
+
+thead th {
+  color: white;
+  padding: 15px 30px;
+  background-color: rgb(78, 78, 78);
+}
+
+tbody td {
+  background-color: hsla(0, 0%, 94%, 0.589);
+}
+
+td a {
+  font: bolder 14px Arial;
+  width: fit-content;
+  padding: 4px 8px;
+  color: white;
+  text-decoration: none;
+}
+
+td a:hover {
+  background-color: green;
+}
+
+img {
+  width: 55px;
+  height: 55px;
+  margin: 10px 20px;
+  border: 3px solid white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0);
+}
+
+.control,
+.name {
+  padding: 15px 27px;
+}
+
+.view {
+  background-color: #03a9f4;
+}
+
+.delete {
+  background-color: #d1215c;
+}
