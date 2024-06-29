@@ -1,0 +1,18 @@
+div {
+  width: 400px;
+  font-size: 19.5px;
+  background-color: #f3efef;
+  margin: 20px;
+  padding: 20px;
+}
+
+.div2 {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.div3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
