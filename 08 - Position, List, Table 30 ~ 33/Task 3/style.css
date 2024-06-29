@@ -1,0 +1,47 @@
+.main {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  width: 400px;
+  margin: 20px auto;
+}
+
+.lang1,
+.lang2,
+.lang3 {
+  list-style: none;
+  background-color: #eee;
+  padding: 10px 4px 10px 10px;
+  margin: 20px 0;
+}
+
+
+
+.lang3 .list1, .lang3 .list2 {
+  list-style: inside;
+  margin-left: -40px;
+  list-style-type: circle;
+}
+
+.lang1 .list1,
+.lang1 .list2,
+.lang1 .list3 {
+  margin-left: -4px;
+}
+
+.lang2 .list1,
+.lang2 .list2,
+.lang2 .list3 {
+  list-style-type: upper-roman;
+  margin-left: -4px;
+}
+
+.list1,
+.list2,
+.list3 {
+  background-color: white;
+  margin: 4px;
+  padding: 5px 10px;
+}
+
+li .lan {
+  margin: -2px 0 10px;
+}
