@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.layout {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid: 10% auto 10% / repeat(9, auto);
+}
+
+header {
+  grid-column-start: span 9;
+  background-color: #03A9F4;
+}
+
+section {
+  grid-column-start: span 7;
+  background-color: #FF5722;
+}
+
+aside {
+  grid-column-start: span 2;
+  background-color: #607D8B;
+}
+
+footer {
+  grid-column-start: span 9;
+  background-color: #009688;
+}
+
+header::before,
+section::before,
+footer::before,
+aside::before,
+section::before {
+  font: 1.2em Arial;
+  display: block;
+  padding: 20px;
+  color: white
+}
+
+footer::before {
+  content: "Footer";
+}
+
+aside::before {
+  content: "Aside";
+
+}
+
+header::before {
+  content: "Header";
+}
+
+section::before {
+  content: "Section";
+}
