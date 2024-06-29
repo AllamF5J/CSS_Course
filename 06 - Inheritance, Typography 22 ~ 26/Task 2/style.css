@@ -1,0 +1,18 @@
+p {
+  margin: 20px auto;
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.one {
+  font-family: "Open Sans", sans-serif;
+}
+
+.two {
+  font-family: "Cairo", sans-serif;
+}
+
+.three {
+  font-family: "Jomhuria", serif;
+}
