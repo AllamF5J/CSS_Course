@@ -1,0 +1,4 @@
+div:nth-of-type(2)>div[title] {
+  color: red;
+  font-weight: bold;
+}
