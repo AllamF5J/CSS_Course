@@ -1,0 +1,4 @@
+div *:not(div:last-child, h3, div:first-child) {
+  color: red;
+  font-weight: bold;
+}
