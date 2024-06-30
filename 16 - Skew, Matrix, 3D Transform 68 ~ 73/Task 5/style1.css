@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  perspective: 600px;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  margin: 50% auto;
+  font: 30px sans-serif;
+  color: white;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  position: relative;
+}
+
+div:hover {
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+}
+
+div::before {
+  content: "Back";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: #1692FC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+div::after {
+  content: "Front";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: #FA3664;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
