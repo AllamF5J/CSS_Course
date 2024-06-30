@@ -1,0 +1,56 @@
+:root {
+  --main-color: #ff5722;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  width: 150px;
+  height: 100px;
+  margin: 50px auto;
+  color: white;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+}
+
+h1::after {
+  content: "";
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: var(--main-color);
+  z-index: -1;
+  transform: skew(-14deg, -10deg);
+  -webkit-transform: skew(-14deg, -10deg);
+  -moz-transform: skew(-14deg, -10deg);
+  -ms-transform: skew(-14deg, -10deg);
+  -o-transform: skew(-14deg, -10deg);
+}
+
+h1::before {
+  content: "";
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: var(--main-color);
+  z-index: -1;
+  transform: skew(14deg, 10deg);
+  -webkit-transform: skew(14deg, 10deg);
+  -moz-transform: skew(14deg, 10deg);
+  -ms-transform: skew(14deg, 10deg);
+  -o-transform: skew(14deg, 10deg);
+}
