@@ -1,0 +1,4 @@
+div:nth-last-of-type(n+2)>div:nth-last-of-type(2) {
+  color: red;
+  font-weight: bold;
+}
