@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  width: 150px;
+  height: 100px;
+  background-color: #009688;
+  color: white;
+  padding: 4px 25px 4px 20px;
+  position: relative;
+}
+
+h1::before {
+  content: " ";
+  display: flex;
+  position: absolute;
+  background-color: inherit;
+  width: 40px;
+  height: 108px;
+  left: -19px;
+  transform: skew(19deg);
+  -webkit-transform: skew(19deg);
+  -moz-transform: skew(19deg);
+  -ms-transform: skew(19deg);
+  -o-transform: skew(19deg);
+}
+
+h1::after {
+  content: " ";
+  display: flex;
+  position: absolute;
+  background-color: inherit;
+  width: 25px;
+  height: 108px;
+  left: -53px;
+  transform: skew(19deg);
+  -webkit-transform: skew(19deg);
+  -moz-transform: skew(19deg);
+  -ms-transform: skew(19deg);
+  -o-transform: skew(19deg);
+}
