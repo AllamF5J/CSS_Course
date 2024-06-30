@@ -1,0 +1,41 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  font-weight: bold;
+  font-size: 40px;
+  color: #03a9f4;
+  position: relative;
+}
+
+div::before {
+  position: absolute;
+  z-index: -1;
+  content: " ";
+  width: inherit;
+  height: inherit;
+  background-color: #03a9f4;
+  transform: scale(1.02) rotate(-5deg);
+  -webkit-transform: scale(1.02) rotate(-5deg);
+  -moz-transform: scale(1.02) rotate(-5deg);
+  -ms-transform: scale(1.02) rotate(-5deg);
+  -o-transform: scale(1.02) rotate(-5deg);
+}
+
+div::after {
+  position: absolute;
+  z-index: -2;
+  content: " ";
+  width: inherit;
+  height: inherit;
+  background-color: #e91e63;
+  transform: scale(1.02) rotate(5deg);
+  -webkit-transform: scale(1.02) rotate(5deg);
+  -moz-transform: scale(1.02) rotate(5deg);
+  -ms-transform: scale(1.02) rotate(5deg);
+  -o-transform: scale(1.02) rotate(5deg);
+}
