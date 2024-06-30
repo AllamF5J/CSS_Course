@@ -1,0 +1,4 @@
+.parent> :not(:nth-child(1)) {
+  color: red;
+  font-weight: bold;
+}
